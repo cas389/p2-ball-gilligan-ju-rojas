@@ -122,6 +122,12 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 	}
 }
 
+@media (min-width:768px) {
+	#flex-container {
+		display: flex;
+	}
+}
+
 /*===========================
 
 Responsive Web Coding - 1366px by 768px (Laptop)

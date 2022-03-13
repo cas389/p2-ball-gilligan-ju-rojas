@@ -224,8 +224,11 @@ Responsive Web Coding - 1366px by 768px (Laptop)
 		clear: none;
 		float: left;
 	}
-	header li {
+	header ul {
 		float: right;
+	}
+	header li {
+		float: left;
 		margin-top: 2rem;
 	}
 	nav li a {

@@ -80,6 +80,10 @@ footer {
 	padding: 1rem;
 	width: 100%;
 }
+.footer-flexbox-item {
+	margin: 2rem;
+	text-align: center;
+}
 
 .footer-two {
 	background: #ffcb0a;
@@ -210,6 +214,9 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 	  flex-wrap: wrap;
 	  justify-content: space-around;
 	}
+	.footer-flexbox-item {
+		max-width: 20rem;
+	}
 }
 
 /*===========================
@@ -251,6 +258,9 @@ Responsive Web Coding - 1366px by 768px (Laptop)
 	/* Home Icon Section */
 	.flex-icon {
 		max-width: 18rem;
+	}
+	.footer-flexbox-item {
+		max-width: 20rem;
 	}
 }
 

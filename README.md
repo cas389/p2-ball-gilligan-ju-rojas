@@ -6,3 +6,4 @@ Group Project 2 for MMC6278
 
 
 ## Outside Resources
+Rounded Rectangles: https://www.w3schools.com/css/css3_borders.asp 

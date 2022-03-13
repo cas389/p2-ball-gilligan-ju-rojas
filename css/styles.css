@@ -1,5 +1,13 @@
 /*===========================
 
+Custom Fonts
+
+===========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*===========================
+
 Reset Rule
 
 ===========================*/
@@ -40,6 +48,14 @@ Header
 	margin: 2rem;
 }
 
+nav li a {
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+}
+
+nav ul {
+	list-style-type: none;
+}
 /*===========================
 
 Footer
@@ -129,6 +145,25 @@ Responsive Web Coding - 1366px by 768px (Laptop)
 ===========================*/
 
 @media screen and (min-width: 1366px) {
+	/* Header */
+	.logo{
+		clear: none;
+		float: left;
+	}
+	header li {
+		float: right;
+		margin-top: 2rem;
+	}
+	nav li a {
+    color: white;
+		background-color: #1b3561;
+		margin: 2rem;
+		padding: 1rem;
+		border-radius: .5rem;
+  }
+  nav li a:hover {
+  }
+	/* Hero */
 	.hero {
 		height: 500px;
 	}

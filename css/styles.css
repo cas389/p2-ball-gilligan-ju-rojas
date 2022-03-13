@@ -74,24 +74,14 @@ Footer
 
 ===========================*/
 footer {
-	background: #ebf7fd;
+	background: #e6f6fc;
 	font-family: 'Lato', sans-serif;
-  text-align: center;
+	text-align: center;
+	font-size: 1rem;
 	padding: 1rem;
-	width: 100%;
 }
-.footer-flexbox-item {
-	margin: 2rem;
-	text-align: center;
-}
-
-.footer-two {
-	background: #ffcb0a;
-	padding: .5rem;
-	text-align: center;
-	color: white;
-	font-style: italic;
-	font-size: 1.25rem;
+footer section {
+	margin: 1rem;
 }
 footer a {
 	color: black;
@@ -99,6 +89,14 @@ footer a {
 }
 footer a:hover {
 	color: #ffcb0a;
+}
+.footer-two {
+	background: #ffcb0a;
+	padding: .5rem;
+	color: white;
+	font-style: italic;
+	margin: 0 auto;
+	text-align: center;
 }
 /*===========================
 
@@ -153,7 +151,7 @@ Home - Read More Section
   text-align: justify;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly
 }
 .home-flexbox-item {
 	margin: 2rem;
@@ -188,6 +186,17 @@ Home - Icon section
 	padding: 2rem;
 	margin: 3rem auto 0rem;
 }
+
+
+/*===========================
+
+Secondary Pages
+
+===========================*/
+main {
+	clear: both;
+	width: 100%;
+}
 /*===========================
 
 Responsive Web Coding - 768px by 1024px (Tablet)
@@ -205,16 +214,6 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 	}
 	/* Home Icon Section */
 	.flex-icon {
-		max-width: 20rem;
-	}
-	/* Footer */
-	footer {
-	  text-align: left;
-	  display: flex;
-	  flex-wrap: wrap;
-	  justify-content: space-around;
-	}
-	.footer-flexbox-item {
 		max-width: 20rem;
 	}
 }
@@ -259,8 +258,21 @@ Responsive Web Coding - 1366px by 768px (Laptop)
 	.flex-icon {
 		max-width: 18rem;
 	}
+	/* Footer */
+	footer{
+		background: #e6f6fc;
+		font-family: 'Lato', sans-serif;
+	  text-align: justify;
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: space-between;
+		padding: 2rem;
+	}
 	.footer-flexbox-item {
-		max-width: 20rem;
+		max-width: 18rem;
+		padding: 0 2rem;
+		text-align: center;
+		width: 100%;
 	}
 }
 

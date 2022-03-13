@@ -26,6 +26,8 @@ Universal Stylings
 ===========================*/
 h1 {
 	color: #FFCB0A;
+	font-family: 'Arvo', serif;
+	font-weight: 700;
 }
 
 h2 {
@@ -37,6 +39,9 @@ h2 {
 	font-weight: bold;
 }
 
+.width100 {
+	max-width: 100%;
+}
 /*===========================
 
 Header
@@ -104,8 +109,10 @@ Home - Hero section
 
 .home-intro-text {
 	text-align: center;
+  font-family: 'Arvo', serif;
+	font-weight: 700;
 	margin: 2rem;
-	font-size: 3rem;
+	font-size: 2rem;
 	color: #FFCB0A;
 }
 
@@ -113,6 +120,25 @@ Home - Hero section
 	color: #1b3561;
 }
 
+
+/*===========================
+
+Home - Read More Section
+
+===========================*/
+.home-flexbox {
+	font-family: 'Lato', sans-serif;
+  text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.home-flexbox-item {
+	margin: 2rem;
+}
+.home-flexbox-text {
+	margin-top: 1rem;
+}
 
 
 /*===========================
@@ -133,8 +159,13 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 ===========================*/
 
 @media screen and (min-width: 575px) {
+	/* Hero Section */
 	.hero {
 		height: 400px;
+	}
+	/* Home Read More Section */
+	.home-flexbox-item {
+		max-width: 20rem;
 	}
 }
 
@@ -166,6 +197,10 @@ Responsive Web Coding - 1366px by 768px (Laptop)
 	/* Hero */
 	.hero {
 		height: 500px;
+	}
+	/* Home Read More Section */
+	.home-flexbox-item {
+		max-width: 30rem;
 	}
 }
 

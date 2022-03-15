@@ -8,6 +8,9 @@
 
 		<!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+		<!-- Font Awesome for Social Icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 
   <body>
@@ -25,6 +28,7 @@
     </header>
 
     <!-- Body Section -->
+		<!-- Hero Section -->
     <main>
       <section class="hero">
         <img class="hero-img" src="images/home-hero1.jpg" alt="Family getting water out of well." title="Family getting water out of well.">
@@ -33,6 +37,7 @@
          </section>
       </section>
 
+			<!-- Intro Text Under Hero -->
       <section class="home-intro-text">
         <p>
           771 million people lack basic access<br>
@@ -41,55 +46,91 @@
         </p>
       </section>
 
-      <section>
-        <img src="images/pump-water.jpg" alt="Father and Daughter pumping water out of the ground." title="Father and Daughter pumping water out of the ground.">
-        <h1>Our Work</h1>
-        <p>
-        771 million people lack basic access to clean and safe drinking water. We’ve been on a mission to end the water crisis since 2006, and with the help of generous supporters like you, we’re getting closer every day.
-        </p>
-        <button><a href="work.html">Learn More</a></button>
+			<!-- Read More Section -->
+      <section class="home-flexbox">
+				<div class="home-flexbox-item">
+	        <img class="width100" src="images/pump-water.jpg" alt="Father and Daughter pumping water out of the ground." title="Father and Daughter pumping water out of the ground.">
+					<div class="home-flexbox-text">
+						<h1>Our Work</h1>
+		        <p>
+		        771 million people lack basic access to clean and safe drinking water. We’ve been on a mission to end the water crisis since 2006, and with the help of generous supporters like you, we’re getting closer every day.
+		        </p>
+						<p class="home-read-more"><a href="work.html">Learn More</a></p>
+					</div>
+				</div>
 
-        <img src="images/cup-water.jpg" alt="Young women holding cup." title="Young women holding cup.">
-        <h1>Our Work</h1>
-        <p>
-        Since charity: water was founded in 2006, we’ve been chasing one ambitious goal: ending the global water crisis. And while the water crisis is huge, we’re optimistic. We know how to solve the problem, and we make progress every day thanks to the help of local partners and generous supporters. If we work together, we believe everyone will have access to life’s most basic need within our lifetime.
-        </p>
-        <button><a href="about.html">Learn More</a></button>
+				<div class="home-flexbox-item">
+	        <img class="width100" src="images/cup-water.jpg" alt="Young women holding cup." title="Young women holding cup.">
+					<div class="home-flexbox-text">
+						<h1>About Us</h1>
+		        <p>
+		        Since charity: water was founded in 2006, we’ve been chasing one ambitious goal: ending the global water crisis. And while the water crisis is huge, we’re optimistic. We know how to solve the problem, and we make progress every day thanks to the help of local partners and generous supporters. If we work together, we believe everyone will have access to life’s most basic need within our lifetime.
+		        </p>
+		       	<p class="home-read-more"><a href="about.html">Learn More</a></p>
+					</div>
+				</div>
       </section>
 
-      <section class="home-icons">
-        <img src="images/dollar-icon.png" alt="Dollar Icon">
-        <h2>91,414</h2>
-        <p class=center-bold>Water Projects Funded</p>
-        <p>This number represents all water projects funded by charity: water, including completed projects and those under construction. This number is dynamic and updates as we receive new information from our partners in the field.</p>
 
-        <img src="images/water-icon.png" alt="Water Icon">
-        <h2>14,762,215</h2>
-        <p class=center-bold>People Will Be Served</p>
-        <p>This number represents the total number of people who will gain access to clean water as reported by our implementing partners. This number is dynamic and updates as we receive new information from our partners in the field.</p>
+			<!-- Icon Section -->
+			<section class="home-flexbox home-icons">
+				<div class="home-flexbox-item flex-icon">
+	        <img class="width100" src="images/dollar-icon.png" alt="Dollar Icon">
+					<div class="home-flexbox-text">
+						<h2>91,414</h2>
+		        <p class="center-bold">Water Projects Funded</p>
+		        <p>This number represents all water projects funded by charity: water, including completed projects and those under construction. This number is dynamic and updates as we receive new information from our partners in the field.</p>
+					</div>
+				</div>
 
-        <img src="images/world-icon.png" alt="World Icon">
-        <h2>29</h2>
-        <p class=center-bold>Countries</p>
-        <p>This number includes all countries where we have funded projects.</p>
-      </section>
+				<div class="home-flexbox-item flex-icon">
+	        <img class="width100" src="images/water-icon.png" alt="Water Icon">
+					<div class="home-flexbox-text">
+		        <h2>14,762,215</h2>
+		        <p class="center-bold">People Will Be Served</p>
+		        <p>This number represents the total number of people who will gain access to clean water as reported by our implementing partners. This number is dynamic and updates as we receive new information from our partners in the field.</p>
+					</div>
+				</div>
+
+				<div class="home-flexbox-item flex-icon">
+					<img class="width100" src="images/world-icon.png" alt="World Icon">
+					<div class="home-flexbox-text">
+						<h2>29</h2>
+						<p class="center-bold">Countries</p>
+						<p>This number includes all countries where we have funded projects.</p>
+					</div>
+				</div>
+			</section>
     </main>
 
     <!-- Footer Section -->
     <footer>
-      Donation Processing Center <br>
-      PO Box 5026<br>
-      Hagerstown, MD<br>
-      21741-5026<br>
+	    <section class="footer-flexbox-item">
+				Donation Processing Center <br>
+				PO Box 5026<br>
+				Hagerstown, MD<br>
+				21741-5026<br>
+	    </section>
 
-      Phone: 1 (646) 688-2323<br>
-      Email: <a href="mailto:contact@charitywater.com">contact@charitywater.com</a><br>
+	    <section class="footer-flexbox-item">
+				Phone: <a href="tel:1646-688-2323">1 (646) 688-2323</a><br>
+				Email: <a href="mailto:contact@charitywater.com">contact@charitywater.com</a><br>
+	    </section>
 
-      Stay connected<br>
-    </footer>
-    <footer class="footer-two">
-      	&copy; 2022 charitywater
-    </footer>
+	    <section class="footer-flexbox-item">
+				<p>Follow us on social!</p>
+				<a href="https://www.facebook.com/charitywater"><i class="fa fa-facebook"></i></a>
+				<a href="https://twitter.com/charitywater"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.instagram.com/charitywater/"><i class="fa fa-instagram"></i></a>
+				<a href="https://www.snapchat.com/add/charitywater"><i class="fa fa-snapchat"></i></a>
+				<a href="https://www.youtube.com/user/charitywater"><i class="fa fa-youtube"></i></a>
+				<a href="https://www.linkedin.com/company/charity-water"><i class="fa fa-linkedin"></i></a>
+	    </section>
+		</footer>
+
+    <div class="footer-two">
+      	<p>&copy; 2022 charitywater</p>
+    </div>
 
     <!-- Javascript -->
     <script src="js/main.js"></script>

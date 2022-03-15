@@ -1,5 +1,13 @@
 /*===========================
 
+Custom Fonts
+
+===========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*===========================
+
 Reset Rule
 
 ===========================*/
@@ -18,17 +26,29 @@ Universal Stylings
 ===========================*/
 h1 {
 	color: #FFCB0A;
+	font-family: 'Arvo', serif;
+	font-weight: 700;
+	padding-bottom: .5rem;
 }
 
 h2 {
 	color: #1b3561;
+	text-align: center;
+	margin: 1rem;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	margin-bottom: .50rem;
 }
 
 .center-bold {
 	text-align: center;
 	font-weight: bold;
 }
-
+.width100 {
+	max-width: 100%;
+}
 /*===========================
 
 Header
@@ -40,22 +60,43 @@ Header
 	margin: 2rem;
 }
 
+nav li a {
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+}
+
+nav ul {
+	list-style-type: none;
+}
 /*===========================
 
 Footer
 
 ===========================*/
 footer {
-	background: #ebf7fd;
+	background: #e6f6fc;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	font-size: 1rem;
+	padding: 1rem;
 }
-
+footer section {
+	margin: 1rem;
+}
+footer a {
+	color: black;
+	text-decoration: none;
+}
+footer a:hover {
+	color: #ffcb0a;
+}
 .footer-two {
 	background: #ffcb0a;
 	padding: .5rem;
-	text-align: center;
 	color: white;
 	font-style: italic;
-	font-size: 1.25rem;
+	margin: 0 auto;
+	text-align: center;
 }
 /*===========================
 
@@ -88,8 +129,10 @@ Home - Hero section
 
 .home-intro-text {
 	text-align: center;
+  font-family: 'Arvo', serif;
+	font-weight: 700;
 	margin: 2rem;
-	font-size: 3rem;
+	font-size: 2rem;
 	color: #FFCB0A;
 }
 
@@ -98,6 +141,40 @@ Home - Hero section
 }
 
 
+/*===========================
+
+Home - Read More Section
+
+===========================*/
+.home-flexbox {
+	font-family: 'Lato', sans-serif;
+  text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly
+}
+.home-flexbox-item {
+	margin: 2rem;
+	text-align: center;
+}
+.home-flexbox-text {
+	margin-top: 1rem;
+	text-align: justify;
+}
+.home-read-more {
+	background: #e6e2e2;
+	max-width: 50%;
+	text-align: center;
+	font-size: 1rem;
+	text-transform: uppercase;
+	border-radius: .5rem;
+	margin-top: 1rem;
+}
+.home-read-more a {
+	text-decoration: none;
+	color: #1b3561;
+	padding: 1rem;
+}
 
 /*===========================
 
@@ -107,9 +184,19 @@ Home - Icon section
 .home-icons {
 	background: #e6e2e2;
 	padding: 2rem;
-	margin-top: 2rem;
+	margin: 3rem auto 0rem;
 }
 
+
+/*===========================
+
+Secondary Pages
+
+===========================*/
+main {
+	clear: both;
+	width: 100%;
+}
 /*===========================
 
 Responsive Web Coding - 768px by 1024px (Tablet)
@@ -117,8 +204,17 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 ===========================*/
 
 @media screen and (min-width: 575px) {
+	/* Hero Section */
 	.hero {
 		height: 400px;
+	}
+	/* Home Read More Section */
+	.home-flexbox-item {
+		max-width: 20rem;
+	}
+	/* Home Icon Section */
+	.flex-icon {
+		max-width: 20rem;
 	}
 }
 
@@ -135,8 +231,54 @@ Responsive Web Coding - 1366px by 768px (Laptop)
 ===========================*/
 
 @media screen and (min-width: 1366px) {
+	/* Header */
+	.logo{
+		clear: none;
+		float: left;
+	}
+	header ul {
+		float: right;
+	}
+	header li {
+		float: left;
+		margin-top: 2rem;
+	}
+	nav li a {
+    color: white;
+		background-color: #1b3561;
+		margin: 2rem;
+		padding: 1rem;
+		border-radius: .5rem;
+  }
+  nav li a:hover {
+  }
+	/* Hero */
 	.hero {
 		height: 500px;
+	}
+	/* Home Read More Section */
+	.home-flexbox-item {
+		max-width: 30rem;
+	}
+	/* Home Icon Section */
+	.flex-icon {
+		max-width: 18rem;
+	}
+	/* Footer */
+	footer{
+		background: #e6f6fc;
+		font-family: 'Lato', sans-serif;
+	  text-align: justify;
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: space-between;
+		padding: 2rem;
+	}
+	.footer-flexbox-item {
+		max-width: 18rem;
+		padding: 0 2rem;
+		text-align: center;
+		width: 100%;
 	}
 }
 

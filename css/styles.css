@@ -33,8 +33,13 @@ h1 {
 
 h2 {
 	color: #1b3561;
+	font-family: 'Arvo', serif;
 	text-align: center;
 	margin: 1rem;
+}
+
+h3 {
+	font-family: 'Lato', sans-serif;
 }
 
 p {
@@ -198,6 +203,36 @@ main {
 	width: 100%;
 }
 /*===========================
+
+/********************************
+
+Our Work Hero
+
+********************************/
+.ow_content {
+	margin: 3%;
+}
+.ow_hero {
+	padding: 10% 2% 50% 2%;
+	margin: 20px 0 20px 0;
+	background-image: url(../images/our_work_hero.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.ow_hero h1 {
+	color: #1b3561;
+}
+
+.ow_process {
+	margin-top: 50px;
+}
+
+
+/*****************************
+
 
 Responsive Web Coding - 768px by 1024px (Tablet)
 

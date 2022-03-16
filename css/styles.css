@@ -213,18 +213,19 @@ Our Work Hero
 	margin: 3%;
 }
 .ow_hero {
-	padding: 10% 2% 50% 2%;
-	margin: 20px 0 20px 0;
+	padding: 5% 2% 70% 2%;
 	background-image: url(../images/our_work_hero.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: center;
+	background-position: 5% 0%;
 }
+
 
 .ow_hero h1 {
 	color: #1b3561;
 }
+
 
 .ow_process {
 	margin-top: 50px;

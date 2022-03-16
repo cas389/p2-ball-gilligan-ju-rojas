@@ -212,19 +212,29 @@ Our Work Hero
 .ow_content {
 	margin: 3%;
 }
+
+.ow_content p {
+	padding-bottom: 30px;
+}
+
+.ow_content h2, h3 {
+	text-align: left;
+	margin: 0 0 30px 0;
+
+}
 .ow_hero {
 	margin-top: 30px;
-	padding: 10% 2% 70% 2%;
-	background-image: url(../images/our_work_hero.jpg);
+	padding: 12% 3% 70% 3%;
+	background-image: url(../images/our_work_hero3.jpg);
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: 0 100px;
 }
 
 
 .ow_hero h1 {
 	color: #1b3561;
+	margin-bottom: 20px;
 }
 
 
@@ -235,6 +245,12 @@ Our Work Process Section
 **************************************/
 .ow_process {
 	margin-top: 50px;
+}
+.ow_numbers {
+	color: white;
+	background-color: #1b3561;
+	padding: 8px;
+	border-radius: 4px;
 }
 
 /*************************************

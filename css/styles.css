@@ -209,6 +209,7 @@ main {
 Our Work Hero
 
 ********************************/
+
 .ow_content {
 	margin: 3%;
 }
@@ -258,8 +259,13 @@ Our Work Process Section
 Our Work Partners Section
 
 **************************************/
-
-
+.ow_partners {
+	background-color: #ebf7fd;
+	padding: 40px 0 40px 0;
+}
+.ow_partners_content {
+	margin: 3%;
+}
 
 
 /*****************************

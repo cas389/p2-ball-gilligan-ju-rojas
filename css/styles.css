@@ -213,12 +213,13 @@ Our Work Hero
 	margin: 3%;
 }
 .ow_hero {
-	padding: 5% 2% 70% 2%;
+	margin-top: 30px;
+	padding: 10% 2% 70% 2%;
 	background-image: url(../images/our_work_hero.jpg);
-	background-size: cover;
+	background-size:cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: 5% 0%;
+	background-position: 0 100px;
 }
 
 
@@ -227,9 +228,22 @@ Our Work Hero
 }
 
 
+/*************************************
+
+Our Work Process Section
+
+**************************************/
 .ow_process {
 	margin-top: 50px;
 }
+
+/*************************************
+
+Our Work Partners Section
+
+**************************************/
+
+
 
 
 /*****************************

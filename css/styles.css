@@ -59,12 +59,65 @@ p {
 Header
 
 ===========================*/
-
+header {
+	display: flex;
+	padding: 1rem;
+	justify-content: space-between;
+	align-items: center;
+}
 .logo {
 	width: 15rem;
 	margin: 2rem;
 }
+.navigation {
+	display: none;
+	text-align: center;
+}
 
+.navigation.active {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #FFCB0A;
+	z-index: 100;
+}
+.navigation.active a {
+	color: white;
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+	font-size: 2rem;
+	padding: 1rem;
+}
+nav ul {
+	list-style-type: none;
+}
+nav li {
+	margin: 3rem;
+}
+
+.toggleBox {
+	padding-right: 2rem;
+	font-size: 1.5rem;
+	color: #1b3561;
+	z-index: 101;
+}
+.blue {
+	color: #1b3561;
+}
+
+
+/*
+nav a {
+	padding-right: 100%;
+	background: #ffcb0a;
+	overflow: hidden;
+}
 nav li a {
 	font-family: 'Lato', sans-serif;
 	text-decoration: none;
@@ -73,6 +126,10 @@ nav li a {
 nav ul {
 	list-style-type: none;
 }
+*/
+
+
+
 /*===========================
 
 Footer
@@ -361,22 +418,41 @@ Responsive Web Coding - 1366px by 768px (Laptop)
 		clear: none;
 		float: left;
 	}
-	header ul {
-		float: right;
+	.navigation {
+		display: flex;
+	}
+	.toggleBox {
+		display: none;
 	}
 	header li {
 		float: left;
-		margin-top: 2rem;
+		margin: .5rem;
 	}
-	nav li a {
-    color: white;
-		background-color: #1b3561;
+	.active-menu-item {
+		color: white;
+		background: #FFCB0A;
 		margin: 2rem;
 		padding: 1rem;
 		border-radius: .5rem;
+	}
+	.menu-item {
+		background: #1b3561;
+		margin: 2rem;
+		padding: 1rem;
+		border-radius: .5rem;
+	}
+	nav li a {
+    color: white;
+		margin: 2rem;
+		padding: 1rem;
+		text-decoration: none;
+		font-family: 'Lato', sans-serif;
+ 		font-size: 1.25rem;
   }
   nav li a:hover {
   }
+
+
 	/* Hero */
 	.hero {
 		height: 500px;

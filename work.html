@@ -15,21 +15,23 @@
 	</head>
 
   <body>
-      <!-- Header Section -->
-      <header>
-        <a href="index.html"><img src="images/logo.svg" alt="Logo for Charity: Water" title="Logo for Charity:Water" class="logo"></a>
-  
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="work.html">Our Work</a></li>
-          </ul>
-        </nav>
-      </header>
+		<!-- Header Section -->
+    <header>
+			<a href="index.html"><img src="images/logo.svg" alt="Logo for Charity: Water" title="Logo for Charity:Water" class="logo"></a>
+			<nav class="navigation">
+				<ul>
+					<li class="active-menu-item"><a href="index.html">Home</a></li>
+          <li class="menu-item"><a href="about.html">About</a></li>
+          <li class="menu-item"><a href="work.html">Our Work</a></li>
+				</ul>
+			</nav>
+			<section class="toggleBox">
+				<a onclick="showMenu()" href="#"><i class="fa fa-bars blue menu"></i></a>
+			</section>
+    </header>
 
     <main>
-      
+
       <div class="ow_hero">
         <img src="images/our_work_hero3.jpg" class="ow_hero_image">
         <h1>Our Work</h1>
@@ -42,7 +44,7 @@
 
       <div class="ow_content">
 
-      
+
 
         <div class="ow_process">
           <h2>The Process</h2>
@@ -53,7 +55,7 @@
           sustainably for years to come.</p>
 
           <div class="ow_process_container">
-            
+
             <div class="process_flex_item">
               <h3> <span class="ow_numbers">1</span> Planning</h3>
               <p>Our local partners select water point locations based on a variety of

@@ -42,6 +42,11 @@ h3 {
 	font-family: 'Lato', sans-serif;
 }
 
+h4 {
+	font-family: 'Lato', sans-serif;
+	color:#FFCB0A;
+}
+
 p {
 	font-family: 'Lato', sans-serif;
 	margin-bottom: .50rem;
@@ -260,6 +265,18 @@ main {
 	width: 100%;
 }
 /*===========================
+
+/****************************
+
+About Hero Section
+
+*******************************/
+
+.about-h2 {
+	font-family: 'Lato', sans-serif;
+	color: 
+}
+
 
 /********************************
 

@@ -284,6 +284,12 @@ Our Work Hero Section
 ********************************/
 .ow_body {
 	width: 100%;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.ow_page_wrapper {
+	max-width: 1200px;
 }
 
 .ow_hero {
@@ -331,6 +337,7 @@ Our Work Process Section
 **************************************/
 .ow_process {
 	margin-top: 30px;
+	margin: 0 auto;
 }
 
 .ow_numbers {
@@ -411,6 +418,7 @@ Our Work Outcomes Section
 #outcomes {
 	margin-top: 40px;
 	margin-bottom: 40px;
+	max-width: 1500px;
 }
 
 .ow_content li {

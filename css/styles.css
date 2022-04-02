@@ -366,8 +366,9 @@ Our Work Partners Section
 }
 
 .ow_partner_section {
-	max-width: 350px;
 	margin: 0 auto;
+	max-width: 350px;
+
 }
 
 .ow_partner_section div  {
@@ -447,6 +448,17 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 		display: flex;
 	}
 
+	/* Our Work Partner Section */
+	.ow_partner_section {
+		max-width: 250px;
+	}
+
+	#ow_partners_content {
+		display:flex;
+		justify-content: space-evenly;
+
+	}
+
 }
 
 @media (min-width: 1000px){
@@ -462,11 +474,11 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 	.ow_content {
 		margin: 1%;
 	}
-
-	.process_flex_item {
-		max-width: 350px;
-	}	
 	
+	.process_flex_item{
+		max-width: 350px;
+	}
+
 	.ow_process_container {
 		display: flex;
 		justify-content: space-evenly;
@@ -477,6 +489,10 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 		display:flex;
 		justify-content: space-evenly;
 
+	}
+
+	.ow_partner_section{
+		max-width: 350px;
 	}
 }
 

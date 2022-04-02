@@ -330,8 +330,9 @@ Our Work Process Section
 
 **************************************/
 .ow_process {
-	margin-top: 50px;
+	margin-top: 30px;
 }
+
 .ow_numbers {
 	color: white;
 	background-color: #1b3561;
@@ -339,9 +340,6 @@ Our Work Process Section
 	border-radius: 4px;
 }
 
-.process_flex_item {
-	max-width: 350px;
-}
 
 /*************************************
 
@@ -464,6 +462,10 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 	.ow_content {
 		margin: 1%;
 	}
+
+	.process_flex_item {
+		max-width: 350px;
+	}	
 	
 	.ow_process_container {
 		display: flex;

@@ -316,14 +316,7 @@ Our Work Hero Section
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
-	max-width: 1200px;
-}
-
-
-.ow_hero_image {
-	width: 100%;
-	max-width: 2000px;
-	z-index: -1;
+	max-height: 300px;
 }
 
 .ow_hero h1 {
@@ -458,6 +451,32 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 
 }
 
+@media (min-width: 1000px){
+	.ow_hero {
+		margin-top: 30px;
+		padding: 10% 3% 20% 3%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 100%;
+		max-height: 300px;
+	}
+
+	.ow_content {
+		margin: 1%;
+	}
+	
+	.ow_process_container {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	/* Our Work Partner Section */
+	#ow_partners_content {
+		display:flex;
+		justify-content: space-evenly;
+
+	}
+}
 
 /*===========================
 
@@ -515,20 +534,9 @@ Responsive Web Coding - 1366px by 768px (Laptop)
 		max-width: 30rem;
 	}
 	
-	.ow_process_container {
-		display: flex;
-		justify-content: space-evenly;
-	}
 	/* Home Icon Section */
 	.flex-icon {
 		max-width: 18rem;
-	}
-
-	/* Our Work Partner Section */
-	#ow_partners_content {
-		display:flex;
-		justify-content: space-evenly;
-
 	}
 
 	/* Footer */

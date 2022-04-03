@@ -365,12 +365,38 @@ About Section
 	font-family: 'Lato', sans-serif;
 	color: white;
 	font-weight: lighter;
-    font-size: 4rem;
+    font-size: 3rem;
     position: absolute;
     top: 40%;
     padding: 0 10%;
 }
 
+
+
+.about-together {
+	margin: 3%;	
+}
+
+.about-together h4 {
+	text-align: left;
+}
+.featured {
+	position: relative;
+	text-align: center;
+	color: white;
+	max-width: fit-content;
+	
+}
+
+.team p{
+	text-align: center;
+}
+
+.team h4 {
+	text-align: center;
+	padding-bottom: 3%;
+	padding-top: 2%;
+}
 
 /********************************
 

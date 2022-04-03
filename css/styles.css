@@ -59,6 +59,91 @@ p {
 .width100 {
 	max-width: 100%;
 }
+
+/*===========================
+
+Floating Button + PopUp Add
+
+===========================*/
+.floating-btn {
+	width: 4rem;
+	height: 4rem;
+	background: #FFCB0A;
+	display: flex;
+	border-radius: 50%;
+	font-size: 2rem;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	box-shadow: 2px 2px 5px rgba(0,0,0, .25);
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	transition: background 0.25s;
+	color: black;
+	outline: blue;
+	border: none;
+	cursor: pointer;
+	z-index: 102;
+}
+
+.floating-btn:active {
+	background: black;
+	color: white;
+}
+
+#overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0, .25);
+	z-index: 99999;
+}
+
+#modal {
+	max-width: 20rem;
+	height: 35rem;
+	margin: auto;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.popup-container {
+	padding: 1rem;
+}
+.home-popup-button-para {
+	text-align: center;
+}
+.popup-photo {
+	max-width: 100%;
+}
+.popup-form {
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+.popup-form.input {
+	background: black;
+}
+.name,
+.email {
+	font-size: 1.05rem;
+	background: #FFCB0A4A;
+	width: 100%;
+	padding: .25rem;
+}
+.submit-popup {
+	background: #FFCB0A;
+	cursor: pointer;
+	margin: 1rem auto;
+	padding: .25rem;
+	box-shadow: 2px 2px 5px rgba(0,0,0, .25);
+}
 /*===========================
 
 Header
@@ -78,7 +163,6 @@ header {
 	display: none;
 	text-align: center;
 }
-
 .navigation.active {
 	display: flex;
 	flex-direction: column;
@@ -112,29 +196,23 @@ nav li {
 	color: #1b3561;
 	z-index: 101;
 }
-.blue {
+.menu,
+.close {
 	color: #1b3561;
-}
-
-
-/*
-nav a {
-	padding-right: 100%;
-	background: #ffcb0a;
-	overflow: hidden;
-}
-nav li a {
-	font-family: 'Lato', sans-serif;
 	text-decoration: none;
 }
-
-nav ul {
-	list-style-type: none;
+.fa.fa-bars.menu.hide {
+	display: none;
 }
-*/
-
-
-
+.fa.fa-times.close {
+	display: none;
+}
+.fa.fa-times.close.show {
+	display: flex;
+}
+a.no-underline {
+	text-decoration: none;
+}
 /*===========================
 
 Footer
@@ -182,6 +260,7 @@ Home - Hero section
 	object-fit: cover;
 	object-position: center top;
   opacity: 75%;
+	z-index: -100;
 }
 .hero-items {
 	position: relative;
@@ -228,18 +307,20 @@ Home - Read More Section
 	margin-top: 1rem;
 	text-align: justify;
 }
-.home-read-more {
-	background: #e6e2e2;
-	max-width: 50%;
+.home_button {
+	background-color: #1b3561;
+	padding: 10px;
+	width: 150px;
+	border-radius: 4px;
 	text-align: center;
-	font-size: 1rem;
-	text-transform: uppercase;
-	border-radius: .5rem;
-	margin-top: 1rem;
+	color: white;
+	margin: 0 auto;
+	margin-top: 30px;
+	cursor: pointer;
 }
-.home-read-more a {
+.home_button a {
 	text-decoration: none;
-	color: #1b3561;
+	color: white;
 	padding: 1rem;
 }
 
@@ -284,12 +365,10 @@ About Section
 	font-family: 'Lato', sans-serif;
 	color: white;
 	font-weight: lighter;
-	font-size: 4rem;
-	position: absolute;
-	top: 40%;
-	padding: 0 10%;
-
-	
+    font-size: 4rem;
+    position: absolute;
+    top: 40%;
+    padding: 0 10%;
 }
 
 
@@ -298,10 +377,28 @@ About Section
 Our Work Hero Section
 
 ********************************/
+.ow_body {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.ow_page_wrapper {
+	max-width: 1200px;
+}
+
+.ow_hero {
+	margin: 0 auto;
+}
+.ow_hero h1 {
+	margin-top: -12px;
+}
 
 .ow_content {
 	margin: 3%;
+	padding-top: 20px;
 }
+
 
 .ow_content p {
 	padding-bottom: 30px;
@@ -310,31 +407,21 @@ Our Work Hero Section
 .ow_content h2, h3 {
 	text-align: left;
 	margin: 0 0 30px 0;
-
 }
 
-/*
+
 .ow_hero {
 	margin-top: 30px;
-	padding: 12% 3% 70% 3%;
+	padding: 12% 3% 20% 3%;
 	background-image: url(../images/our_work_hero3.jpg);
-	background-size:cover;
+	background-size: cover;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 	width: 100%;
-	max-width: 1200px;
-}
-*/
-
-.ow_hero_image {
-	width: 100%;
-	max-width: 2000px;
-	z-index: -1;
+	max-height: 300px;
 }
 
 .ow_hero h1 {
 	color: #1b3561;
-	margin-bottom: 20px;
 }
 
 
@@ -344,8 +431,10 @@ Our Work Process Section
 
 **************************************/
 .ow_process {
-	margin-top: 50px;
+	margin-top: 30px;
+	margin: 0 auto;
 }
+
 .ow_numbers {
 	color: white;
 	background-color: #1b3561;
@@ -353,35 +442,45 @@ Our Work Process Section
 	border-radius: 4px;
 }
 
-.process_flex_item {
-	max-width: 350px;
-}
 
 /*************************************
 
 Our Work Partners Section
 
 **************************************/
+
 .ow_partners {
 	background-color: #ebf7fd;
 	padding: 40px 0 40px 0;
 }
+
 .ow_partners_content {
 	margin: 3%;
 }
 
 .ow_partners h2 {
+	margin: 0 0 30px 20px;
 	text-align: left;
-	margin: 0 0 30px 0;
 }
 
 .ow_partners_content h3 {
 	margin: 20px 0 20px 0;
 }
 
+.ow_partner_section {
+	margin: 0 auto;
+	max-width: 350px;
+
+}
+
+.ow_partner_section div  {
+	margin: 3%;
+}
+
 .partner_image {
 	width: 100%;
-	max-width: 350px;
+	max-width: 300px;
+	margin-top: 50px;
 }
 
 .ow_button {
@@ -393,20 +492,37 @@ Our Work Partners Section
 	color: white;
 	margin: 0 auto;
 	margin-top: 30px;
+	cursor: pointer;
 }
 
-.ow_partner_section {
-	margin-bottom: 40px;
-	max-width: 350px;
+#readmore {
+	display: none;
 }
 
+#readmore2 {
+	display: none;
+}
+
+#readmore3 {
+	display: none;
+}
 /*************************************
 
 Our Work Outcomes Section
 
 **************************************/
+#outcomes {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	max-width: 1500px;
+}
+
 .ow_content li {
 	font-family: 'Lato', sans-serif;
+}
+
+.ow_content ul {
+	margin-left: 20px;
 }
 
 /*****************************
@@ -435,8 +551,61 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 	#flex-container {
 		display: flex;
 	}
+
+	/* Our Work Partner Section */
+	.ow_partner_section {
+		max-width: 250px;
+	}
+
+	#ow_partners_content {
+		display:flex;
+		justify-content: space-evenly;
+
+	}
+
 }
 
+@media (min-width: 1000px){
+	.ow_hero {
+		margin-top: 30px;
+		padding: 10% 3% 20% 3%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 100%;
+		max-height: 300px;
+	}
+
+	.ow_content {
+		margin: 1%;
+	}
+
+	.process_flex_item{
+		max-width: 350px;
+	}
+
+	.ow_process_container {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	/* Our Work Partner Section */
+	#ow_partners_content {
+		display:flex;
+		justify-content: space-evenly;
+
+	}
+	.ow_partner_section{
+		max-width: 350px;
+	}
+	/*PopUp Ad */
+	#modal {
+		max-width: 40rem;
+		height: 40rem;
+	}
+	.popup-container {
+		padding: 2rem;
+	}
+}
 
 /*===========================
 
@@ -493,18 +662,12 @@ Responsive Web Coding - 1366px by 768px (Laptop)
 	.home-flexbox-item {
 		max-width: 30rem;
 	}
-	.ow_partners_content{
-		display: flex;
-		justify-content: space-evenly;
-	}
-	.ow_process_container {
-		display: flex;
-		justify-content: space-evenly;
-	}
+
 	/* Home Icon Section */
 	.flex-icon {
 		max-width: 18rem;
 	}
+
 	/* Footer */
 	footer{
 		background: #e6f6fc;

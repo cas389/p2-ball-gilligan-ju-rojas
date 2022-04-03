@@ -14,6 +14,28 @@
 	</head>
 
   <body>
+		<!-- Button for PopUp Add -->
+		<button id="show-modal-btn" class="floating-btn"><i class="fa fa-envelope-o"></i></button>
+
+		<div id="overlay">
+			<div id="modal">
+				<section class="popup-container">
+					<h1 class="center-bold">Subscribe to Our Mailing List!</h1>
+					<img class="popup-photo" src="images/popup-background.jpg" alt="Different People">
+					<p>Join our mailing list by filling out the form below!</p>
+					<form class="popup-form">
+						<label for="name">Full Name</label><br /><br />
+						<input class="name" type="text" value="First, Last" /> <br /><br />
+						<label for="email">Email Address</label><br /><br />
+						<input class="email" type="email" value="Name@domain.com" /> <br />
+						<button class="submit-popup" type="submit" value="Submit">Submit</button>
+					</form>
+				<p class="home-popup-button-para"><button id="close-modal-btn" class="home_button">Close</button></p>
+				</section>
+			</div>
+		</div>
+
+
     <!-- Header Section -->
     <header>
 			<a href="index.html"><img src="images/logo.svg" alt="Logo for Charity: Water" title="Logo for Charity:Water" class="logo"></a>
@@ -25,7 +47,9 @@
 				</ul>
 			</nav>
 			<section class="toggleBox">
-				<a onclick="showMenu()" href="#"><i class="fa fa-bars blue menu"></i></a>
+				<a onclick="showMenu()" href="#" class="no-underline">
+					<i class="fa fa-bars menu"></i><i class="fa fa-times close"></i>
+				</a>
 			</section>
     </header>
 
@@ -57,7 +81,7 @@
 		        <p>
 		        771 million people lack basic access to clean and safe drinking water. We’ve been on a mission to end the water crisis since 2006, and with the help of generous supporters like you, we’re getting closer every day.
 		        </p>
-						<p class="home-read-more"><a href="work.html">Learn More</a></p>
+						<p class="home_button"><a href="work.html">Learn More</a></p>
 					</div>
 				</div>
 
@@ -68,7 +92,7 @@
 		        <p>
 		        Since charity: water was founded in 2006, we’ve been chasing one ambitious goal: ending the global water crisis. And while the water crisis is huge, we’re optimistic. We know how to solve the problem, and we make progress every day thanks to the help of local partners and generous supporters. If we work together, we believe everyone will have access to life’s most basic need within our lifetime.
 		        </p>
-		       	<p class="home-read-more"><a href="about.html">Learn More</a></p>
+						<p class="home_button"><a href="about.html">Learn More</a></p>
 					</div>
 				</div>
       </section>

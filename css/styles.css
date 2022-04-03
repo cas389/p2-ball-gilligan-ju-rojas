@@ -78,7 +78,6 @@ header {
 	display: none;
 	text-align: center;
 }
-
 .navigation.active {
 	display: flex;
 	flex-direction: column;
@@ -112,29 +111,23 @@ nav li {
 	color: #1b3561;
 	z-index: 101;
 }
-.blue {
+.menu,
+.close {
 	color: #1b3561;
-}
-
-
-/*
-nav a {
-	padding-right: 100%;
-	background: #ffcb0a;
-	overflow: hidden;
-}
-nav li a {
-	font-family: 'Lato', sans-serif;
 	text-decoration: none;
 }
-
-nav ul {
-	list-style-type: none;
+.fa-bars.menu.hide {
+	display: none;
 }
-*/
-
-
-
+.fa-times.close {
+	display: none;
+}
+.fa-times.close.show {
+	display: flex;
+}
+a.no-underline {
+	text-decoration: none;
+}
 /*===========================
 
 Footer
@@ -228,18 +221,19 @@ Home - Read More Section
 	margin-top: 1rem;
 	text-align: justify;
 }
-.home-read-more {
-	background: #e6e2e2;
-	max-width: 50%;
+.home_button {
+	background-color: #1b3561;
+	padding: 10px;
+	width: 150px;
+	border-radius: 4px;
 	text-align: center;
-	font-size: 1rem;
-	text-transform: uppercase;
-	border-radius: .5rem;
-	margin-top: 1rem;
+	color: white;
+	margin: 0 auto;
+	margin-top: 30px;
 }
-.home-read-more a {
+.home_button a {
 	text-decoration: none;
-	color: #1b3561;
+	color: white;
 	padding: 1rem;
 }
 

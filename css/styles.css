@@ -283,7 +283,7 @@ Our Work Hero Section
 
 ********************************/
 .ow_body {
-	width: 100%;
+	width: 90%;
 	margin: 0 auto;
 	max-width: 1200px;
 }
@@ -482,7 +482,7 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 	.ow_content {
 		margin: 1%;
 	}
-	
+
 	.process_flex_item{
 		max-width: 350px;
 	}
@@ -559,7 +559,7 @@ Responsive Web Coding - 1366px by 768px (Laptop)
 	.home-flexbox-item {
 		max-width: 30rem;
 	}
-	
+
 	/* Home Icon Section */
 	.flex-icon {
 		max-width: 18rem;

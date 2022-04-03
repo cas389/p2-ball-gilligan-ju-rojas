@@ -14,6 +14,28 @@
 	</head>
 
   <body>
+		<!-- Button for PopUp Add -->
+		<button id="show-modal-btn" class="floating-btn"><i class="fa fa-envelope-o"></i></button>
+
+		<div id="overlay">
+			<div id="modal">
+				<section class="popup-container">
+					<h1 class="center-bold">Subscribe to Our Mailing List!</h1>
+					<img class="popup-photo" src="images/popup-background.jpg" alt="Different People">
+					<p>Join our mailing list by filling out the form below!</p>
+					<form class="popup-form">
+						<label for="name">Full Name</label><br /><br />
+						<input class="name" type="text" value="First, Last" /> <br /><br />
+						<label for="email">Email Address</label><br /><br />
+						<input class="email" type="email" value="Name@domain.com" /> <br />
+						<button class="submit-popup" type="submit" value="Submit">Submit</button>
+					</form>
+				<p class="home-popup-button-para"><button id="close-modal-btn" class="home_button">Close</button></p>
+				</section>
+			</div>
+		</div>
+
+
     <!-- Header Section -->
     <header>
 			<a href="index.html"><img src="images/logo.svg" alt="Logo for Charity: Water" title="Logo for Charity:Water" class="logo"></a>

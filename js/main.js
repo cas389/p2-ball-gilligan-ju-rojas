@@ -1,6 +1,33 @@
 // Testing
 console.log("Testing to make sure JS is working");
 
+// PopUp Ad
+var overlay = document.querySelector("#overlay");
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector("#show-modal-btn").addEventListener("click", () => {
+    overlay.style.display = "block";
+  })
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector("#close-modal-btn").addEventListener("click", () => {
+    overlay.style.display = "none";
+  })
+});
+
+/*
+document.querySelector("#show-modal-btn").addEventListener("click", () => {
+  overlay.style.display = "block";
+})
+
+document.querySelector("#close-modal-btn").addEventListener("click", () => {
+  overlay.style.display = "none";
+})*/
+
+
+
 
 // Hamburger Menu
 function showMenu (){

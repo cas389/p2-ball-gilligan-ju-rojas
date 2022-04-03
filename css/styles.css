@@ -59,6 +59,91 @@ p {
 .width100 {
 	max-width: 100%;
 }
+
+/*===========================
+
+Floating Button + PopUp Add
+
+===========================*/
+.floating-btn {
+	width: 4rem;
+	height: 4rem;
+	background: #FFCB0A;
+	display: flex;
+	border-radius: 50%;
+	font-size: 2rem;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	box-shadow: 2px 2px 5px rgba(0,0,0, .25);
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	transition: background 0.25s;
+	color: black;
+	outline: blue;
+	border: none;
+	cursor: pointer;
+	z-index: 102;
+}
+
+.floating-btn:active {
+	background: black;
+	color: white;
+}
+
+#overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0, .25);
+	z-index: 99999;
+}
+
+#modal {
+	max-width: 20rem;
+	height: 35rem;
+	margin: auto;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.popup-container {
+	padding: 1rem;
+}
+.home-popup-button-para {
+	text-align: center;
+}
+.popup-photo {
+	max-width: 100%;
+}
+.popup-form {
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+.popup-form.input {
+	background: black;
+}
+.name,
+.email {
+	font-size: 1.05rem;
+	background: #FFCB0A4A;
+	width: 100%;
+	padding: .25rem;
+}
+.submit-popup {
+	background: #FFCB0A;
+	cursor: pointer;
+	margin: 1rem auto;
+	padding: .25rem;
+	box-shadow: 2px 2px 5px rgba(0,0,0, .25);
+}
 /*===========================
 
 Header
@@ -175,6 +260,7 @@ Home - Hero section
 	object-fit: cover;
 	object-position: center top;
   opacity: 75%;
+	z-index: -100;
 }
 .hero-items {
 	position: relative;
@@ -230,6 +316,7 @@ Home - Read More Section
 	color: white;
 	margin: 0 auto;
 	margin-top: 30px;
+	cursor: pointer;
 }
 .home_button a {
 	text-decoration: none;
@@ -391,6 +478,7 @@ Our Work Partners Section
 	color: white;
 	margin: 0 auto;
 	margin-top: 30px;
+	cursor: pointer;
 }
 
 #readmore {
@@ -492,9 +580,16 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 		justify-content: space-evenly;
 
 	}
-
 	.ow_partner_section{
 		max-width: 350px;
+	}
+	/*PopUp Ad */
+	#modal {
+		max-width: 40rem;
+		height: 40rem;
+	}
+	.popup-container {
+		padding: 2rem;
 	}
 }
 

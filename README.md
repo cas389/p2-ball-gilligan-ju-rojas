@@ -25,3 +25,7 @@ Floating Button Tutorial: https://www.youtube.com/watch?v=u5hx_YtqylA
 Pop Up Ad Tutorial: https://www.youtube.com/watch?v=uUCpopjPZdI
 
 How to fix document.querySelector null error: https://thewebdev.info/2021/08/13/how-to-fix-the-javascript-document-queryselector-is-null-error/
+
+GNews - API: https://gnews.io/
+
+GNews - API -Documentation: https://gnews.io/docs/v4#introduction

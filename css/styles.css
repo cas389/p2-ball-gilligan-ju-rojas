@@ -501,30 +501,39 @@ About Section
 
 
 
-.about-together {
-	margin: 3%;	
-}
-
-.about-together h4 {
+.together-flexbox {
+	flex-direction: row;
+	display: inline;
+	align-items: stretch;	
 	text-align: left;
 }
+.word-flexbox {
+	flex-direction: row;
+	display: inline;
+	align-items: stretch;
+	text-align: right;
+}
+
 .featured {
 	position: relative;
 	text-align: center;
-	color: white;
-	max-width: fit-content;
-	
+	color: white;	
+}
+
+
+.team h4 {
+	text-align: center;
+	padding-bottom: 1%;
+	padding-top: 2%;
 }
 
 .team p{
 	text-align: center;
 }
-
-.team h4 {
-	text-align: center;
-	padding-bottom: 3%;
-	padding-top: 2%;
+.team-container {
+	display: inline-flexbox;
 }
+
 
 /********************************
 

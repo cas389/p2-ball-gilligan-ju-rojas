@@ -499,27 +499,31 @@ About Section
     padding: 0 10%;
 }
 
+/***************together section *****/
 
-
-.together-flexbox {
-	flex-direction: row;
-	display: inline;
-	align-items: stretch;	
-	text-align: left;
-}
-.word-flexbox {
-	flex-direction: row;
-	display: inline;
-	align-items: stretch;
-	text-align: right;
+.together-grid {
+display: flex;
+flex-wrap: wrap;
+padding: 3%;
+	
 }
 
+.column {
+	flex: 50%;
+	padding: 3%;
+}
+
+.column-image {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
 .featured {
 	position: relative;
 	text-align: center;
 	color: white;	
 }
 
+/****************team secion ***************/
 
 .team h4 {
 	text-align: center;
@@ -530,10 +534,21 @@ About Section
 .team p{
 	text-align: center;
 }
+
+
 .team-container {
-	display: inline-flexbox;
+	display: flex;
 }
 
+.team-image {
+	flex: 25%;
+	padding: 5%;
+	justify-content: space-evenly;
+
+}
+ .about-caption {
+	 font-weight:bold;
+ }
 
 /********************************
 

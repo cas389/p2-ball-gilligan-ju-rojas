@@ -477,7 +477,7 @@ main {
 
 /****************************
 
-About Section
+About Page
 
 *******************************/
 
@@ -493,23 +493,17 @@ About Section
 	font-family: 'Lato', sans-serif;
 	color: #FFCB0A;
 	font-weight: lighter;
-	font-size: 3rem;
+	font-size: 1.75rem;
 }
 
-/***************together section *****/
+/****************************
 
+About Page - Together Section
+
+*******************************/
 .together-grid {
-display: flex;
-flex-wrap: wrap;
-padding: 3%;
-
+	margin: 1rem;
 }
-
-.column {
-	flex: 50%;
-	padding: 3%;
-}
-
 .column-image {
 	padding-top: 4px;
 	padding-bottom: 4px;
@@ -519,8 +513,18 @@ padding: 3%;
 	text-align: center;
 	color: white;
 }
+.about-section-bottom {
+	margin-bottom: 1rem;
+}
+.about-section-top {
+	margin-top: 1rem;
+}
 
-/****************team secion ***************/
+/****************************
+
+About Page - Team Section
+
+*******************************/
 
 .team h4 {
 	text-align: center;
@@ -793,6 +797,15 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 		flex: 25%;
 		padding: 5%;
 		justify-content: space-evenly;
+	}
+	.together-grid {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 3%;
+	}
+	.column {
+		flex: 50%;
+		padding: 3%;
 	}
 }
 

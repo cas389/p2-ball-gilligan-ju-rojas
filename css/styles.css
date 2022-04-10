@@ -56,6 +56,9 @@ p {
 	text-align: center;
 	font-weight: bold;
 }
+.center {
+	text-align: center;
+}
 .width100 {
 	max-width: 100%;
 }
@@ -617,7 +620,7 @@ Our Work Process Section
 	background-color: #1b3561;
 	padding: 8px;
 	border-radius: 4px;
-	
+
 }
 
 
@@ -703,6 +706,9 @@ Our Work Outcomes Section
 .ow_content ul {
 	margin-left: 20px;
 }
+.ow_partners_content2 {
+	list-style: none;
+}
 
 /*****************************
 
@@ -739,9 +745,11 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 	#ow_partners_content {
 		display:flex;
 		justify-content: space-evenly;
-
 	}
-
+	.ow_partners_content2 {
+		display:flex;
+		justify-content: space-evenly;
+	}
 }
 
 @media (min-width: 1000px){
@@ -774,7 +782,10 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 	#ow_partners_content {
 		display:flex;
 		justify-content: space-evenly;
-
+	}
+	.ow_partners_content2 {
+		display:flex;
+		justify-content: space-evenly;
 	}
 	.ow_partner_section{
 		max-width: 350px;

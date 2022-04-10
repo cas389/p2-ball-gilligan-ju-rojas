@@ -41,35 +41,58 @@ function showMenu (){
 
 //Button 1
 
-var owButton1 = document.getElementById("ow_button1")
-var hiddenContent = document.getElementById('readmore');
-
-owButton1.addEventListener("click", function(event){
-  event.preventDefault();
-  hiddenContent.style.display = (hiddenContent.style.display === "none") ? "block" :
-  "none";
-}, false);
+function readMore(){
+  var owButton1 = document.getElementById("ow_button1");
+  var dots1 = document.getElementById("dots1");
+  var hiddenContent = document.getElementById('readmore');
+  
+  if (dots1.style.display === "none"){
+    dots1.style.display = "inline";
+    owButton1.innerHTML = "Read More";
+    hiddenContent.style.display = "none";
+  } else {
+    dots1.style.display = "none";
+    owButton1.innerHTML = "Show Less";
+    hiddenContent.style.display = "block";
+  }
+}
 
 //Button 2
-var owButton2 = document.getElementById("ow_button2")
-var hiddenContent2 = document.getElementById('readmore2');
 
-owButton2.addEventListener("click", function(event){
-  event.preventDefault();
-  hiddenContent2.style.display = (hiddenContent2.style.display === "none") ? "block" :
-  "none";
-}, false);
+function readMore2(){
+  var owButton2 = document.getElementById("ow_button2");
+  var dots2 = document.getElementById("dots2");
+  var hiddenContent2 = document.getElementById('readmore2');
+  
+  if (dots2.style.display === "none"){
+    dots2.style.display = "inline";
+    owButton2.innerHTML = "Read More";
+    hiddenContent2.style.display = "none";
+  } else {
+    dots2.style.display = "none";
+    owButton2.innerHTML = "Show Less";
+    hiddenContent2.style.display = "block";
+  }
+}
 
 //Button 3
 
-var owButton3 = document.getElementById("ow_button3")
-var hiddenContent3 = document.getElementById('readmore3');
+function readMore3(){
+  var owButton3 = document.getElementById("ow_button3");
+  var dots3 = document.getElementById("dots3");
+  var hiddenContent3 = document.getElementById('readmore3');
+  
+  if (dots3.style.display === "none"){
+    dots3.style.display = "inline";
+    owButton3.innerHTML = "Read More";
+    hiddenContent3.style.display = "none";
+  } else {
+    dots3.style.display = "none";
+    owButton3.innerHTML = "Show Less";
+    hiddenContent3.style.display = "block";
+  }
+}
 
-owButton3.addEventListener("click", function(event){
-  event.preventDefault();
-  hiddenContent3.style.display = (hiddenContent3.style.display === "none") ? "block" :
-  "none";
-}, false);
 
 
 // API GNews

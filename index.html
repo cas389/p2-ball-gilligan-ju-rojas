@@ -26,10 +26,12 @@
 					<img class="popup-photo" src="images/popup-background.jpg" alt="Different People">
 					<p>Join our mailing list by filling out the form below!</p>
 					<form class="popup-form">
-						<label for="name">Full Name</label><br /><br />
-						<input class="name" type="text" value="First, Last" /> <br /><br />
-						<label for="email">Email Address</label><br /><br />
-						<input class="email" type="email" value="Name@domain.com" /> <br />
+						<label>
+    					Name: <input class="name" name="name" value="First, Last">
+						</label>
+						<label>
+    					Email Address: <input class="email" name="name" value="Name@domain.com">
+						</label>
 						<button class="submit-popup" type="submit" value="Submit">Submit</button>
 					</form>
 				<p class="home-popup-button-para"><button id="close-modal-btn" class="home_button">Close</button></p>
@@ -128,24 +130,25 @@
 						<p>This number includes all countries where we have funded projects.</p>
 					</div>
 				</div>
-			</section><!-- API Section -->
+			</section>
+			<!-- API Section -->
 
 			<div class="container-news">
 				<h1 class="news-title">News</h1><br>
-			
+
 				<div class="search-container">
 					<input class="search-input" type="text" name="search" id="search" placeholder="Search on Google...">
 					<button class="search-btn" onclick="getNews()"> Search </button>
 				</div>
-			
+
 				<div>
 					<ul class='news-content'>
-					
-					</ul>
-			
-				</div>
-    </main>
 
+					</ul>
+
+				</div>
+			</div>
+    </main>
     <!-- Footer Section -->
     <footer>
 	    <section class="footer-flexbox-item">

@@ -29,3 +29,5 @@ How to fix document.querySelector null error: https://thewebdev.info/2021/08/13/
 GNews - API: https://gnews.io/
 
 GNews - API -Documentation: https://gnews.io/docs/v4#introduction
+
+Figuring out error in fake popup form: https://stackoverflow.com/questions/38569235/the-for-attribute-of-the-label-element-must-refer-to-a-non-hidden-form-control

@@ -33,4 +33,5 @@ GNews - API -Documentation: https://gnews.io/docs/v4#introduction
 Figuring out error in fake popup form: https://stackoverflow.com/questions/38569235/the-for-attribute-of-the-label-element-must-refer-to-a-non-hidden-form-control
 
 
-Read More button: JavaScript: A Beginner's Guide, 4 Edition text book
+Read More Button: JavaScript: A Beginner's Guide, 4 Edition text book
+Read More Buttons: https://www.w3schools.com/howto/howto_js_read_more.asp

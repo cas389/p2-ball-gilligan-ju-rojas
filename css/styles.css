@@ -554,6 +554,8 @@ Our Work Hero Section
 	width: 90%;
 	margin: 0 auto;
 	max-width: 1200px;
+	text-align: justify;
+
 }
 
 .ow_page_wrapper {
@@ -615,6 +617,7 @@ Our Work Process Section
 	background-color: #1b3561;
 	padding: 8px;
 	border-radius: 4px;
+	
 }
 
 
@@ -647,6 +650,8 @@ Our Work Partners Section
 .ow_partner_section {
 	margin: 0 auto;
 	max-width: 350px;
+	text-align: justify;
+
 
 }
 

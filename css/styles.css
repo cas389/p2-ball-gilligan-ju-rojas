@@ -275,7 +275,7 @@ Home - Hero section
 
 .home-intro-text {
 	text-align: center;
-  font-family: 'Arvo', serif;
+  	font-family: 'Arvo', serif;
 	font-weight: 700;
 	margin: 2rem;
 	font-size: 2rem;
@@ -294,10 +294,10 @@ Home - Read More Section
 ===========================*/
 .home-flexbox {
 	font-family: 'Lato', sans-serif;
-  text-align: justify;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly
+	text-align: justify;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly
 }
 .home-flexbox-item {
 	margin: 2rem;
@@ -348,8 +348,9 @@ Home - API section
   }
 
   .news-title {
+	font-family: 'Arvo', serif;
+	font-weight: 700;
 	text-align: center;
-	font-weight: 500;
   }
 
   ul {
@@ -491,7 +492,6 @@ About Page
 
 .about-h2 {
 	font-family: 'Lato', sans-serif;
-	color: #FFCB0A;
 	font-weight: lighter;
 	font-size: 1.75rem;
 }
@@ -501,13 +501,11 @@ About Page
 About Page - Together Section
 
 *******************************/
-.together-grid {
-	margin: 1rem;
+.team h1 {
+	text-align: center;
+	margin-top: 30px;
 }
-.column-image {
-	padding-top: 4px;
-	padding-bottom: 4px;
-}
+
 .featured {
 	position: relative;
 	text-align: center;
@@ -855,8 +853,6 @@ Responsive Web Coding - 1366px by 768px (Laptop)
 		text-decoration: none;
 		font-family: 'Lato', sans-serif;
  		font-size: 1.25rem;
-  }
-  nav li a:hover {
   }
 
 

@@ -623,7 +623,9 @@ Our Work Process Section
 Our Work Partners Section
 
 **************************************/
-
+.work-h2 {
+	padding-left: 2.5rem;
+}
 .ow_partners {
 	background-color: #ebf7fd;
 	padding: 40px 0 40px 0;
@@ -764,6 +766,9 @@ Responsive Web Coding - 768px by 1024px (Tablet)
 	}
 
 	/* Our Work Partner Section */
+	.work-h2 {
+		padding-left: 3.25rem;
+	}
 	#ow_partners_content {
 		display:flex;
 		justify-content: space-evenly;

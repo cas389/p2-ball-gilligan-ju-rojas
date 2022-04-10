@@ -275,7 +275,7 @@ Home - Hero section
 
 .home-intro-text {
 	text-align: center;
-  font-family: 'Arvo', serif;
+  	font-family: 'Arvo', serif;
 	font-weight: 700;
 	margin: 2rem;
 	font-size: 2rem;
@@ -294,10 +294,10 @@ Home - Read More Section
 ===========================*/
 .home-flexbox {
 	font-family: 'Lato', sans-serif;
-  text-align: justify;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly
+	text-align: justify;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly
 }
 .home-flexbox-item {
 	margin: 2rem;
@@ -348,8 +348,9 @@ Home - API section
   }
 
   .news-title {
+	font-family: 'Arvo', serif;
+	font-weight: 700;
 	text-align: center;
-	font-weight: 500;
   }
 
   ul {
@@ -491,7 +492,6 @@ About Page
 
 .about-h2 {
 	font-family: 'Lato', sans-serif;
-	color: #FFCB0A;
 	font-weight: lighter;
 	font-size: 1.75rem;
 }
@@ -501,13 +501,11 @@ About Page
 About Page - Together Section
 
 *******************************/
-.together-grid {
-	margin: 1rem;
+.team h1 {
+	text-align: center;
+	margin-top: 30px;
 }
-.column-image {
-	padding-top: 4px;
-	padding-bottom: 4px;
-}
+
 .featured {
 	position: relative;
 	text-align: center;
@@ -556,6 +554,8 @@ Our Work Hero Section
 	width: 90%;
 	margin: 0 auto;
 	max-width: 1200px;
+	text-align: justify;
+
 }
 
 .ow_page_wrapper {
@@ -566,7 +566,7 @@ Our Work Hero Section
 	margin: 0 auto;
 }
 .ow_hero h1 {
-	margin-top: -12px;
+	margin-top: -5%;
 }
 
 .ow_content {
@@ -593,6 +593,8 @@ Our Work Hero Section
 	background-repeat: no-repeat;
 	width: 100%;
 	max-height: 300px;
+	box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.6);
+
 }
 
 .ow_hero h1 {
@@ -615,6 +617,7 @@ Our Work Process Section
 	background-color: #1b3561;
 	padding: 8px;
 	border-radius: 4px;
+	
 }
 
 
@@ -647,11 +650,9 @@ Our Work Partners Section
 .ow_partner_section {
 	margin: 0 auto;
 	max-width: 350px;
+	text-align: justify;
 
-}
 
-.ow_partner_section div  {
-	margin: 3%;
 }
 
 .partner_image {
@@ -696,6 +697,7 @@ Our Work Outcomes Section
 
 .ow_content li {
 	font-family: 'Lato', sans-serif;
+	text-align: center;
 }
 
 .ow_content ul {
@@ -856,8 +858,6 @@ Responsive Web Coding - 1366px by 768px (Laptop)
 		text-decoration: none;
 		font-family: 'Lato', sans-serif;
  		font-size: 1.25rem;
-  }
-  nav li a:hover {
   }
 
 
